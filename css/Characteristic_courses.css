@@ -1,0 +1,431 @@
+*{
+	margin: 0;
+	padding:0;
+}
+.border{
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+/* 头部 */
+#header{
+	display: flex;
+	justify-content: space-around;
+	color: white;	
+	font-size: 0.85rem;
+	width: 100%;
+	background-color: #0a1c44;
+	overflow: hidden;
+	padding: 0.7% 0% ;
+}
+/* 菜单栏部分 */
+#nav{
+	background-color: white;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+}
+/* 菜单栏部分【左边】 */
+.nav_left{
+	margin-left: 10%;
+	padding: 1%;
+}
+/* 菜单栏部分【右边】 */
+.nav_right{
+	margin: 0 auto;
+	width: 50%;
+	padding: 1% 0%;
+	padding-top: 2%;
+	padding-bottom: 1%;
+}
+.nav_right ul{
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+}
+.nav_right li{
+	padding: 2% 3%;
+}
+.nav_right a{
+	font-size: 1.1rem;
+	color: black;
+	/* font-weight: bold; */
+	text-decoration: none;
+}
+.nav_right a:hover{
+	color: orange;
+}
+/* PC端 */
+@media screen and (max-width:1024px){
+.nav_right ul li a{font-size:1.1rem;}
+}
+/* iPad端 */
+@media screen and (min-width:700px) and (max-width:1000px){
+.nav_right ul li a{font-size:0.8rem;}
+.nav_right li{padding-top: 3%;}
+}
+/* 手机端 */
+/* @media screen and (min-width:769px) and (max-width:700px){
+.nav_right ul li a{font-size:0.4rem;}
+.nav_right li{padding-top: 5%;}
+} */
+
+/* 滚动图 */
+#column{
+	margin: 0 auto;
+	padding: 15% 10%;
+	border: 1px solid black;
+	background-image: url(../img/all_courses_backgound.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+
+.four{
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	margin-top: 1%;
+}
+.four_img{
+	padding: 1%;
+}
+.four_cent{
+	display: flex;
+}
+.four_Text,h1{
+	font-weight:normal;
+	padding: 1%;
+	color: #333333;
+	font-weight:normal;
+	margin-top: 1%;
+}
+.four_Submit{
+	width:35%;
+	height: 8%;
+	background-color: #fd6c01;
+	border-radius:5px;
+	padding: 1%;
+	margin-top: 7%;
+	border:none;
+	color: white;
+}
+.four_sidebar{
+	border: 1px solid gainsboro;
+	width: 15%;
+	padding: 1%;
+	margin-top: 1%;
+}
+.four_title{
+	text-align: center;
+	font-size: 14px;
+	color: #333333;
+	margin-top: 5%;
+}
+.four_Insertimg{
+	margin-top: 20%;
+	transition: all 0.3;
+	overflow: hidden;
+}
+.four_Insertimgs{
+	margin-top: 5%;
+	transition: all 0.3;
+	overflow: hidden;
+}
+#img:hover{
+	transform: scale(1.1);
+}
+.four_Insertimg_text{
+	border: 1px solid red;
+	width: 180px;
+	height: 50px;
+	background-color: white;
+}
+.fives{
+	margin: 0 auto;
+	display: flex;
+}
+.fives_sidebar{
+	margin-left: 1%;
+	border: 1px solid gainsboro;
+	width:25%;
+	height: 40%;
+}
+.fives_text{
+	padding: 15px ;
+    background-color:#fbfbfb;
+	text-align: center;
+}
+.fives_texts{
+	display: flex;
+	padding: 0 1%;
+}
+.fives_img:hover{
+	opacity: 0.5;
+}
+.fives_img{
+	margin-top: 5%;
+	transition: all 0.3;
+	overflow: hidden;
+}
+.fives_img2:hover{
+	opacity: 0.5;
+}
+.fives_img2{
+	margin-top: 5%;
+	transition: all 0.3;
+	overflow: hidden;
+}
+.fives_img3:hover{
+	opacity: 0.5;
+}
+.fives_img3{
+	margin-top: 5%;
+	transition: all 0.3;
+	overflow: hidden;
+}
+.fives_img4:hover{
+	opacity: 0.5;
+}
+.fives_img4{
+	margin-top: 5%;
+	transition: all 0.3;
+	overflow: hidden;
+}
+#imgs:hover{
+	transform: scale(1.1);
+}
+a{
+	text-decoration: none;
+	color: orange;
+	margin: 5px ;
+	font-size: 17px;
+}
+.fives_texts_title{
+	margin: 8px;
+	font-size: 15px;
+}
+.fives_texts2{
+	display: flex;
+}
+.fives_texts_title2{
+	margin: 8px;
+	font-size: 15px;
+}
+.fives_texts3{
+	display: flex;
+}
+.fives_texts_title3{
+	margin: 8px;
+	font-size: 15px;
+}
+.fives_texts4{
+	display: flex;
+}
+.fives_texts_title4{
+	margin: 8px;
+	font-size: 15px;
+}
+.fives_right_sidebar{
+	border: 1px solid gainsboro;
+	width:80%;
+	margin-left: 4%;
+	
+}
+.right_text{
+	width:100%;
+	border: 1px solid #fbfbfb;
+	background-color:#fbfbfb;
+}
+.right_text_title{
+	width:20%;
+	background-color: white;
+	padding: 15px;
+}
+.right_text_content,h4{
+	font-weight:normal;
+	margin: 10px auto;
+	font-size: 20px;
+}
+.text_content{
+	margin-top: 10%;
+	font-size: 20px;
+}
+/* ———————————————————————————————————————————————————————— */
+/* 页脚的最【上面】 */
+#foot{
+	color: white;
+	background-color: #2a2931;
+}
+/* 页脚上面标题部分 */
+.foot_up{
+	text-align: center;
+	padding: 3% 0%;
+}
+.foot_up_title_one{
+	color: #ffffff;
+	font-size: 1.8rem;
+}
+.foot_up_title_two{
+	font-size: 1.2rem;
+	color: #fd6c01;
+	background-color: transparent;
+	font-weight: bold;
+}
+/* 页脚下面内容部分 */
+.foot_up_contet{
+	display: flex;
+	justify-content: space-evenly;
+	padding: 5%;
+	padding-top: 0%;
+	padding-bottom: 3%;
+}
+.foot_up_contet>div{
+	width: 23%;
+}
+/* 三个标题部分 */
+.fucl_title{
+	color: white;
+	font-size: 1.25rem;
+	padding-bottom: 5%;
+}
+.foot_up_contet_left{
+	font-size: 0.9rem;
+}
+.foot_up_contet_left>div{
+	padding: 1% 0%;
+}
+.foot_up_contet_left div:nth-child(2){
+	padding-top: 5%;
+}
+
+/* 页脚最【下面】 */
+.foot_down{
+	font-size: 0.875rem;
+	/* width: 100%; */
+	margin: 0 auto;
+	background-color: #282828;
+	color: white;
+	padding: 2% 0;
+	text-align: center;
+}
+.foot_up_contet_middle li{
+	font-size: 0.9rem;
+	list-style: none;
+	padding: 1% 0;
+}
+.foot_up_contet_middle a{
+	color: white;
+	text-decoration: none;
+}
+.foot_up_contet_middle a:hover{
+	color: #fd6c01;
+}
+.foot_up_contet_right_middle{
+	font-size: 0.9rem;
+	padding: 2% 0%;
+	padding-bottom: 5%;
+}
+.foot_up_contet_right_down{
+	margin-top: 10%;
+}
+.foot_up_contet_right_down1{
+	float: left;
+}
+.foot_up_contet_right_down2{
+	float: right;
+	font-size: 0.9rem;
+	padding-top: 13%;
+	padding-bottom: 13%;
+	padding-right: 40%;
+}
+#forms{
+	width: 45%;
+	position: absolute;
+	top: 10%;
+    left: 30%;
+    position: fixed;
+    z-index:1002; 
+    overflow: auto;
+    background-color: white;
+    display: none;
+}
+#fade{
+	display: none;
+	background-color: rgb(0, 0, 0);
+}
+.forms_top{
+	width: 100%;
+	display: flex;
+}
+.forms_foot{
+	padding: 10px;
+}
+.forms_left{
+	background-color: #f4f4f4;
+	font-size: 20PX;
+	width: 90%;
+	padding: 20px;
+}
+.forms_right{
+	font-size: 20PX;
+	width: 10%;
+	color: white;
+	text-align: center;
+	border: 1PX solid #ff6600;
+	background-color: #ff6600;
+	padding: 20px;
+}
+.forms_foot_title{
+	text-align: center;
+	font-size: 25px;
+	margin: 7% auto;
+}
+.forms_text_box{
+	margin: 3% 8%;
+	font-size: 20px;
+}
+.forms_text_box input{
+	width: 80%;
+	padding: 10px;
+}
+.forms_text_box2{
+	margin: 3% 5%;
+	font-size: 20px;
+}
+.forms_text_box2 input{
+	width: 75%;
+	padding: 10px;
+}
+.forms_text_box3{
+	margin: 3% 5%;
+	font-size: 20px;
+}
+.forms_text_box3 input{
+	width: 65%;
+	padding: 40px;
+}
+.forms_foot_submit input{
+	width: 70%;
+	padding: 10px;
+	color: white;
+	background-color: blue;
+	margin: 3% 15%;
+}
+/*透明背景效果*/
+.black_overlay{
+	/*display: none;*/
+    position: absolute; 
+    top: 0%; 
+    left: 0%; 
+    width: 100%; 
+    height: 100%; 
+    background-color: black; 
+    z-index:1001; /* z-index 属性设置元素的堆叠顺序。拥有更高堆叠顺序的元素总是会处于堆叠顺序较低的元素的前面。*/
+    -moz-opacity: 0.8; 
+    opacity:0.8; /* opacity 属性设置元素的不透明级别。*/
+    filter: alpha(opacity=88);  
+	/* 所有浏览器都支持 opacity 属性。   注释：IE8 以及更早的版本支持替代的 filter 属性。例如：filter:Alpha(opacity=50)。*/
+}

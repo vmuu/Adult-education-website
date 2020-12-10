@@ -1,0 +1,314 @@
+	/* —————————————————————————————【手机端】———————————————————————————————— */
+@media screen and (max-width: 760px) {
+	*{
+		margin: 0;
+		padding: 0;
+		/* border: 1px solid red; */
+		/* box-sizing: border-box; */
+	}
+	/* 隐藏页面最上面 */
+	#header{
+		display: none;
+	}
+	/* 导航栏左边 */
+	.nav_left{
+		margin-left: 0%;
+		padding: 3%;
+	}
+	/* 导航栏右边 */
+	.nav_right{
+		display: none;
+	}
+	.nav_right_modile_wrap{
+		padding: 25px 0%;
+	}
+	/* 导航栏右边小图标 */
+	.nav_right_modile{
+		padding: 15px;
+		background: url(../img/nav_modile_background.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	
+	/* 滚动图部分 */
+	.#column{
+		margin: 0 auto;
+		padding: 15% 10%;
+	}
+	.column_text_wrap{
+		position: relative;
+		left: -10%;
+		top: 30%;
+		font-weight: bold;
+	}
+	.column_text_t{
+		color: white;
+		font-size: 3vh;
+		letter-spacing: 8px;
+	}
+	/* 滚动图上面的第二行文字 */
+	.column_text_f{
+		color: white;
+		font-size: 0.6rem;
+	}
+	
+	/* 最右边边按钮点击后的效果 */
+	#nav_mobile_w{
+		display: none;
+		z-index: 999;
+		position: fixed;
+		top: 0;
+		border: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(23, 25, 29, 0.95);
+	}
+	/* 动画效果 */
+	
+	.nav_mobile_w_top{
+		/* display: flex; */
+		text-align: right;
+	}
+	.nav_mobile_w_top img{
+		width: 9%;
+		height: 9%;
+		padding: 3%;
+	}
+	.nav_mobile_w_foot{
+		width: 100%;
+		height: 100%;
+		float: right;
+	}
+	.nav_mobile_w_foot ul{
+		width: 80%;
+		margin: 0 auto;
+	}
+	.nav_mobile_w_foot li{
+		list-style: none;
+		overflow: hidden;
+		font-size: 1rem;
+		line-height: 44px;
+		text-align: right;
+	}
+	.nav_mobile_w_foot li:nth-child(1) a{
+		display: inline-block;
+		width: 100%;
+		border-bottom: 1px solid #fff;
+		color: #fd6c01;
+	}
+	.nav_mobile_w_foot a{
+		color: white;
+		text-decoration: none;
+		font-size: 1rem;
+		font-weight: normal;
+		text-align: right;
+	}
+	
+	
+	/* —————————————————————————————手机端头部划分线———————————————————————————————— */
+	
+	.characteristic_course_top .text_title_foot{
+		font-size: 0.8rem;
+		padding: 0% 2%;
+	}
+	.school_education_top .text_title_foot{
+		font-size: 0.8rem;
+		padding: 0% 2%;
+	}
+	/* 顶级教育优势 */
+	.advantage_foot{
+		flex-wrap: wrap;
+		padding: 2%;
+	}
+	.advantage_foot>div{
+		/* padding: 0px; */
+	}
+	.advantage_foot{
+		overflow: hidden;
+		padding: 2%;
+	}
+	.adv_f{
+		width: 50%;
+		/* margin: 2px; */
+	}
+	.advantage_foot_up{
+		padding: 15%;
+	}
+	/* 详情文字 */
+	.advantage_foot_down p{
+		display: inline;
+		width: 90%;
+		/* padding: 10px 0px; */
+	}
+	.advantage_foot_down p:first-child{
+		padding-right: 0;
+	}
+	.advantage_foot_down p:last-child{
+		padding-left: 0;
+	}
+	.advantage_foot_down{
+		/* padding: 5px; */
+	}
+	
+	/* 特色课程 */
+	.characteristic_course_foot{
+		flex-direction: column;
+	}
+	.characteristic_course_foot_left{
+		margin: 0;
+		justify-content: space-around;
+		flex-direction: row;
+		width: 100%;
+	}
+	/* 4个按钮 */
+	.ccfleft {
+	    font-size: 0.25rem;
+	    text-align: center;
+	    padding: 0%;
+		display: flex;
+		flex-direction: column;
+		padding: 1%;
+	}
+	.ccfright_down {
+	    padding: 5px 4px 5px 4px;
+	}
+	.characteristic_course_foot_right {
+		margin-top: 3%;
+	    margin-right: 0%;
+		display: flex;
+		justify-content: space-evenly;
+		width: 100%;
+	    /* width: 80%; */
+	}
+	.ccfright_center p a{
+		font-size: 0.25rem;
+	}
+	/* 特色课程【尾部-查看课程】 */
+	.characteristic_course_down {
+	    padding: 3% 20%;
+	}
+	.button_default01 {
+	    padding: 0px;
+	    height: 40px;
+	    width: 150px;
+	    border-radius: 2px;
+	    border: 2px solid #fd6c01;
+	}
+	.characteristic_course_foot {
+	    margin-top: 0px;
+	}
+	
+	/* 教育名师 */
+	.famous_teacher_foot{
+		flex-wrap: wrap;
+		/* width: calc(100%/2); */
+	}
+	/* 4个div的外层 */
+	.ftfeacher{
+		width: 40%;
+	}
+	.ftfeacher:nth-child(2)~div{
+		margin-top: 2%;
+	}
+	.ftfeacher_middle {
+	    font-size: 0.8rem;
+	   font-weight: bold;
+	}
+	.ftfeacher_down{
+		font-size: 0.5rem
+	}
+	.characteristic_course_down{
+		text-align: center;
+	}
+	
+	
+	/* 教育学院 */
+	.sef_education{
+		width: 40%;
+	}
+	
+	/* 学院作品 */
+	.cw_center {
+	    padding: 1% 5%;
+	}
+	.college_work_cen {
+	    padding: 0%;
+	}
+	.cw_foot{
+		padding: 13% 20%;
+	}
+	.cw_foot:nth-child(3){
+		margin-top: 2%;
+	}
+	
+	/* 线上教育价值 */
+	/* 设置6个div的大小 */
+	.evf_foot {
+	    width: calc(90%/1);
+	}
+	.educational_value_foot div:nth-child(1)~div {
+	    /* margin-top: 2%; */
+	}
+	.evf_foot_right_down {
+		width: 80%;
+		height: 40px;
+		font-size: 0.5rem;
+		padding-top: 0%;
+		overflow: hidden;
+		padding:0% 1%;
+	}
+	
+	.educational_value_foot {
+		padding: 0%;
+	}
+	/* 升学实时资讯 */
+	.entrance_information_foot{
+		flex-wrap: wrap;
+	}
+
+/* —————————————————————————————手机端尾部划分线———————————————————————————————— */
+	/* 隐藏尾部留版权 */
+	.foot_up,.foot_up_contet{
+		display: none;
+	}
+	.foot_down{
+		padding-bottom: 55px!important;
+		color: #b4b4b4;
+	}
+	/* 隐藏留言板块 */
+	#table_warp{
+		display: none;
+	}
+	/* 底部导航栏 */
+	#nav_mobile{
+		display: block;
+		background-color: white;
+		padding: 2px;
+		display: flex;
+		justify-content: space-around;
+		position:fixed;
+		z-index: 1000;
+		left:0;
+		right:0;
+		bottom:0;
+	}
+	/* 5个div */
+	.nav_mobile_all{
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+	}
+	.nav_mobile_all img{
+		width: 26px;
+		height: 26px;
+	}
+	.nav_mobile_all a{
+		display: inline-block;
+		text-decoration: none;
+		color: #666666;
+	}
+	.nav_mobile1 a:nth-child(2){
+		color: #fd6c01;
+	}
+};

@@ -1,0 +1,313 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>新闻资讯</title>
+		<link rel="stylesheet" href="css/news_information_pc.css" />
+		<link rel="stylesheet" href="css/news_information_phone.css" />
+		<link rel="stylesheet" href="css/news_information_iPad1.css" />
+		<script type="text/javascript" src="js/jquery-3.3.1.js" ></script>
+		<script type="text/javascript">
+			function ym1(){
+			var odi1=document.getElementById("center-1");//页面一
+			var odi2=document.getElementById("center-1-1");//页面二
+			if(odi2.style.display=="none"){
+				
+			}else{
+				odi1.style.display="block";
+				odi2.style.display="none";
+				
+			}
+		}
+		function ym2(){
+			var odi1=document.getElementById("center-1");//页面一
+			var odi2=document.getElementById("center-1-1");//页面二
+			if(odi1.style.display=="none"){
+				
+			}else{
+				odi1.style.display="none";
+				odi2.style.display="block";
+				
+			}
+		}
+		$(function(){
+			$("#dyq").click(function(){
+				$("#dy").hide();
+				$("#xy").show();
+			})
+		})
+		$(function(){
+			$("#xyq").click(function(){
+				$("#xy").hide();
+				$("#dy").show();
+			})
+		})
+		$(function(){
+			$("#dy").click(function(){
+				$("#dy").hide();
+				$("#xy").show();
+			})
+		})
+		$(function(){
+			$("#xy").click(function(){
+				$("#xy").hide();
+				$("#dy").show();
+			})
+		})
+		</script>
+	</head>
+	<body>
+		<div id="totals">
+			<div id="wrap">
+			<!-- 头部 -->
+			<div id="header">
+				<div class="header_left">
+					欢迎来到教育行业网
+				</div>
+				<div class="header_right">
+					<img src="img/footer_iphone.png" />&nbsp;
+					<label>400-000-0000</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<img src="img/footer_email.png" >&nbsp;
+					<label>admin@yourdomain.com</label>
+				</div>
+			</div>
+			<!-- 菜单栏部分 -->
+			<div id="nav">
+				<div class="nav_left">
+					<label><img src="img/logo.png" ></label>
+				</div>
+				<div class="nav_right">
+					<ul>
+						<li><a href="index.html">首页</a></li>
+						<li><a href="all_courses.html">所有课程</a></li>
+						<li><a href="news_information.html" style="color: orange;">新闻资讯</a></li>
+						<li><a href="teacher_team.html">教师团队</a></li>
+						<li><a href="about_us.html">关于我们</a></li>
+					</ul>
+				</div>
+				<!-- 手机端导航栏效果 -->
+				<div class="nav_right_modile_wrap">
+					<div class="nav_right_modile" onclick="navModile()">
+						
+					</div>
+				</div>
+			</div>
+			<!-- 滚动图部分 -->
+			<div id="column">
+				<div class="column_text_wrap">
+					<div class="column_text_t">新闻资讯</div>
+					<div class="column_text_f"></div>
+				</div>
+			</div>
+	    </div>
+	    
+	    <!--第一页的图片-->
+			<div id="center">
+				  <h2>新闻资讯</h2>
+			</div>
+			<div id="center-1">
+				<div id="cemter">
+					<div id="one">
+						<div class="imgs">
+						    <img src="img/1585705880936c822ac6bce46f001.png" width="100%" height="100%"/><br />
+						</div>
+						<h3>日语在线</h3><br />
+						<span>四部门出手，说明教育培训机构的管理政出多门，而多头管理的弊端通常就是管理薄弱。</span><br /><br />
+						<input type="button" id="buttons" value="新闻"/>&nbsp;&nbsp;2020-03-19<br />
+					</div>
+				    <div id="two" >
+				    	<div class="imgs">
+				    	    <img src="img/1585705880933b2a1b02b1d0b4e57.png" width="100%" height="100%"/></br>
+				    	</div>
+				    	<h3>英语在线 实力师资 高频互动 </h3><br />
+						<span>四部门出手，说明教育培训机构的管理政出多门，而多头管理的弊端通常就是管理薄弱。</span><br /><br />
+						<input type="button" id="buttons" value="新闻"/>&nbsp;&nbsp;2020-03-19<br />
+				    </div>
+				    <div id="three" >
+				    	<div class="imgs">
+				    	    <img src="img/1584430356741c856bee98bb82cc6.png" width="100%" height="100%"/>
+				    	</div>
+				    	<h3>现代出家人的互联网学习生活</h3><br />
+						<span>四部门出手，说明教育培训机构的管理政出多门，而多头管理的弊端通常就是管理薄弱。</span><br /><br />
+						<input type="button" id="buttons" value="新闻"/>&nbsp;&nbsp;2020-03-19
+				    </div>
+				    <div id="four" >
+				    	<div class="imgs">
+				    	    <img src="img/1585705880936c822ac6bce46f001.png" width="100%" height="100%"/></br>
+				    	</div>
+				    	<h3>透过大数据看中国幼儿"病"在哪里</h3><br />
+						<span>四部门出手，说明教育培训机构的管理政出多门，而多头管理的弊端通常就是管理薄弱。</span><br /><br />
+						<input type="button" id="buttons" value="新闻"/>&nbsp;&nbsp;2020-03-19<br />
+				    </div>
+				    <div id="five" >
+				    	<div class="imgs">
+				    	     <img src="img/1585705880933b2a1b02b1d0b4e57.png" width="100%" height="100%"/></br>
+				    	</div>
+				    	<h3>课外培训机构到底有多乱？</h3><br />
+						<span>四部门出手，说明教育培训机构的管理政出多门，而多头管理的弊端通常就是管理薄弱。</span><br /><br />
+						<input type="button" id="buttons" value="新闻"/>&nbsp;&nbsp;2020-03-19<br />
+				    </div>
+				    <div id="six" >
+				    	<div class="imgs">
+				    	    <img src="img/1585705880936c822ac6bce46f001.png" width="100%" height="100%"/></br>
+				    	</div>
+				    	<h3>让学生们电脑视频教学</h3><br />
+						<span>四部门出手，说明教育培训机构的管理政出多门，而多头管理的弊端通常就是管理薄弱。</span><br /><br />
+						<input type="button" id="buttons" value="新闻"/>&nbsp;&nbsp;2020-03-19<br />
+				    </div>
+				</div>
+			</div>
+			<!--第二页的图片-->
+			<div id="center-1-1">
+				<div id="center-2-1">
+					<div id="one">
+						<div class="imgs">
+						    <img src="img/1585705880936c822ac6bce46f001.png" width="100%" height="100%"/><br />
+						</div>
+						<h3>日语在线</h3><br />
+						<span>四部门出手，说明教育培训机构的管理政出多门，而多头管理的弊端通常就是管理薄弱。</span><br /><br />
+						<input type="button" id="buttons" value="新闻"/>&nbsp;&nbsp;2020-03-19<br />
+					</div>
+				    <div id="two" >
+				    	<div class="imgs">
+				    	    <img src="img/1585705880933b2a1b02b1d0b4e57.png" width="100%" height="100%"/></br>
+				    	</div>
+				    	<h3>法语在线 面对面交流 </h3><br />
+						<span>四部门出手，说明教育培训机构的管理政出多门，而多头管理的弊端通常就是管理薄弱。</span><br /><br />
+						<input type="button" id="buttons" value="新闻"/>&nbsp;&nbsp;2020-03-19<br />
+				    </div>
+				    <div id="three" >
+				    	<div class="imgs">
+				    	    <img src="img/1584430356741c856bee98bb82cc6.png" width="100%" height="100%"/>
+				    	</div>
+				    	<h3>英语在线学习</h3><br />
+						<span>四部门出手，说明教育培训机构的管理政出多门，而多头管理的弊端通常就是管理薄弱。</span><br /><br />
+						<input type="button" id="buttons" value="新闻"/>&nbsp;&nbsp;2020-03-19
+				    </div>
+				    <div id="four">
+						<div class="imgs">
+						    <img src="img/1585705880936c822ac6bce46f001.png" width="100%" height="100%"/><br />
+						</div>
+						<h3>德语在线</h3><br />
+						<span>四部门出手，说明教育培训机构的管理政出多门，而多头管理的弊端通常就是管理薄弱。</span><br /><br />
+						<input type="button" id="buttons" value="新闻"/>&nbsp;&nbsp;2020-03-19<br />
+					</div>
+				</div>
+			</div>
+
+			<!--按钮-->
+			<div id="button">
+				<input type="button" name="" id="dy" value="<" onclick="ym1()" />
+		        <input type="button" name="" id="dyq" value="1" onclick="ym1()" />
+		        <input type="button" name="" id="xyq" value="2" onclick="ym2()" />
+		        <input type="button" name="" id="xy" value=">" onclick="ym2()" />
+			</div>
+			<!--最底下部分-->
+			<div id="foot">
+				<div class="foot_up">
+					<div class="foot_up_title_one">
+						成人教育网
+					</div>
+					<div class="foot_up_title_two">
+						SCHOOL OF EDUCAtTION CD., LTD
+					</div>
+				</div>
+				<div class="foot_up_contet">
+					<div class="foot_up_contet_left">
+						<div class="fucl_title">联系方式</div>
+						<div class="fucl_title1">
+							<img src="img/15844328714945421afb4d858beb9.png" >
+							&nbsp;联系电话：400-000-0000
+						</div>
+						<div class="fucl_title2">
+							<img src="img/158443287149746bd9ff5a3ee0e8d.png" >
+							&nbsp;邮箱：admin@yourdomain.com
+						</div>
+						<div class="fucl_title3">
+							<img src="img/1584432871496afa2687aa9111b14.png" >
+							&nbsp;地址：珠海市XXX区域XXX街道XXX号
+						</div>
+					</div>
+					<div class="foot_up_contet_middle">
+						<div class="fucl_title">网站导航</div>
+						<ul>
+							<li><a href="index.html">首页</a></li>
+							<li><a href="all_courses.html" >所有课程</a></li>
+							<li><a href="news_information.html">新闻资讯</a></li>
+							<li><a href="teacher_team.html">教师团队</a></li>
+							<li><a href="about_us.html">关于我们</a></li>
+						</ul>
+					</div>
+					<div class="foot_up_contet_right">
+						<div class="fucl_title">
+							更好关注
+						</div>
+						<div class="foot_up_contet_right_middle">
+							扫描二维码，我们会最新的商品为您推荐，为您更好的体验与服务。
+						</div>
+						<div id="foot_up_contet_right_down">
+							<div class="foot_up_contet_right_down1">
+								<img src="img/1584433332907a29ed7f20576daf1.png" >
+							</div>
+							<div class="foot_up_contet_right_down2">
+								手机扫一扫
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="foot_down">
+					Copyright @ 2019-2030 Company name All rights reserved
+				</div>
+			</div>
+		</div>
+		<!-- 手机端导航栏 -->
+		<div id="nav_mobile" >
+			<div class="nav_mobile_all nav_mobile1">
+				<a href="#"><img src="img/nav_mobile_img1.png" ></a>
+				<a href="#">首页</a>
+			</div>
+			<div class="nav_mobile_all nav_mobile2">
+				<a href="all_courses.html"><img src="img/nav_mobile_img2.png" ></a>
+				<a href="all_courses.html">所有课程</a>
+			</div>
+			<div class="nav_mobile_all nav_mobile3">
+				<a href="#"><img src="img/nav_mobile_img3.png" ></a>
+				<a href="#">新闻资讯</a>
+			</div>
+			<div class="nav_mobile_all nav_mobile4">
+				<a href="#"><img src="img/nav_mobile_img4.png" ></a>
+				<a href="#">教师团队</a>
+			</div>
+			<div class="nav_mobile_all nav_mobile5">
+				<a href="#"><img src="img/nav_mobile_img5.png" ></a>
+				<a href="#">关于我们</a>
+			</div>
+		</div>
+		<!-- 最右边边按钮点击后的结构 -->
+		<div id="nav_mobile_w">
+			<div class="nav_mobile_w_top">
+				<img src="img/nav_modile_background_w.png" onclick="navModiles()">
+			</div>
+			<div class="nav_mobile_w_foot">
+				<ul>
+					<li><a href="index.html">首页</a></li>
+					<li><a href="all_courses.html">所有课程</a></li>
+					<li><a href="news_information.html">新闻资讯</a></li>
+					<li><a href="teacher_team.html">教师团队</a></li>
+					<li><a href="about_us.html">关于我们</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- 手机端导航栏被点击后的效果 -->
+		<script type="text/javascript">
+			function navModile(){
+				 $("#nav_mobile_w").slideDown(500); 
+			}
+			function navModiles(){
+				$("#nav_mobile_w").slideUp(500);
+			}
+		</script>
+	</body>
+</html>

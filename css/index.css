@@ -1,0 +1,895 @@
+*{
+	margin: 0;
+	padding: 0;
+	/* border: 1px solid red; */
+	/* box-sizing: border-box; */
+}
+body{
+	font-size: 12px;
+}
+/* 最外层包裹整个页面的div */
+#wrap{
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+/* 头部 */
+#header{
+	display: flex;
+	justify-content: space-around;
+	color: white;	
+	font-size: 0.85rem;
+	width: 100%;
+	background-color: #0a1c44;
+	overflow: hidden;
+	padding: 0.7% 0% ;
+}
+/* 菜单栏部分 */
+#nav{
+	background-color: white;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+}
+/* 菜单栏部分【左边】 */
+.nav_left{
+	margin-left: 10%;
+	padding: 1%;
+}
+/* 菜单栏部分【右边】 */
+.nav_right{
+	margin: 0 auto;
+	width: 50%;
+	padding: 1% 0%;
+	padding-top: 2%;
+	padding-bottom: 1%;
+}
+.nav_right ul{
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+}
+.nav_right li{
+	padding: 2% 3%;
+}
+.nav_right a{
+	font-size: 1.1rem;
+	color: black;
+	text-decoration: none;
+}
+.nav_right a:hover{
+	color: orange;
+}
+/* 隐藏手机端导航栏 */
+#nav_mobile{
+	display: none;
+}
+
+/* 导航栏iPad端 */
+@media screen and (min-width:700px) and (max-width:1000px){
+.nav_right ul li a{font-size:0.8rem;}
+.nav_right li{padding-top: 3%;}
+.advantage_foot_down{padding-bottom: 10%;}
+}
+
+/* 滚动图 */
+#column{
+	margin: 0 auto;
+	padding: 15% 10%;
+	background-image: url(../img/background_index_1.jpg) ;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+/* 滚动图上面的第一行文字 */
+.column_text_t{
+	color: white;
+	font-size: 3.5rem;
+}
+/* 滚动图上面的第二行文字 */
+.column_text_f{
+	color: white;
+	font-size: 1.2rem;
+}
+#column ul{
+	list-style: none;
+	margin: 0 auto;
+	width: 20%;
+	position: absolute;
+	bottom: 2%;
+	left: 48%;
+}
+#column ul li{
+	width: 13px;
+	height: 13px;
+	float: left;
+	border: 2px solid white;
+	border-radius: 50%;
+	cursor: pointer;
+	margin-left: 5px;
+}
+#column ul li:first-child{
+	background:white;
+}
+/* 手机端显示PC隐藏 */
+#nav_mobile_w{
+	display: none;
+}
+/* —————————————————————————————头部划分线———————————————————————————————— */
+
+/* 内容标题通用样式 */
+.text_title_top{
+	text-align: center;
+	font-size: 1.5rem;
+	color: #333333;
+}
+.text_title_foot{
+	text-align: center;
+	font-size: 1rem;
+	color: #333333;
+}
+
+/* 主要内容部分 */
+#centent{
+	width: 100%;
+	height: 100%;
+}
+
+/* 顶尖级教育优势 */
+#advantage{
+	/* margin: 50px auto; */
+}
+.advantage_top{
+	padding: 3% 0%;
+}
+.advantage_foot{
+	/* margin-top: 45px; */
+	display: flex;
+	justify-content: center;
+	justify-content: space-around;
+	padding: 0% 8%;
+}
+.advantage_foot1,.advantage_foot2,.advantage_foot3,.advantage_foot4{
+	margin: 0 auto;
+	float: left;
+	width: calc(96/4);
+	background-color: #f8f8f8;
+}
+.advantage_foot_up{
+	padding: 20%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.advantage_foot1 .advantage_foot_up{
+	background-image: url(../img/advantage_img1.png) ;
+}
+.advantage_foot2 .advantage_foot_up{
+	background-image: url(../img/advantage_img2.png);
+}
+.advantage_foot3 .advantage_foot_up{
+	background-image: url(../img/advantage_img3.png);
+}
+.advantage_foot4 .advantage_foot_up{
+	background-image: url(../img/advantage_img4.png);
+}
+/* 移动到div后的效果 */
+.advantage_foot1:hover .advantage_foot_up{
+	background-image: url(../img/advantage_img1_hover.png)
+}
+.advantage_foot2:hover .advantage_foot_up{
+	background-image: url(../img/advantage_img2_hover.png);
+}
+.advantage_foot3:hover .advantage_foot_up{
+	background-image: url(../img/advantage_img3_hover.png);
+}
+.advantage_foot4:hover .advantage_foot_up{
+	background-image: url(../img/advantage_img4_hover.png);
+}
+.adv_f:hover{
+	background-color: #fd6d02;
+	color: white;
+}
+.adv_f:hover .advantage_foot_middle p{
+	color: white;
+}
+
+.advantage_foot p{
+	text-align: center;
+}
+.advantage_foot_middle p{
+	font-size: 1.125rem;
+	color: black;
+	padding: 20px;
+}
+.advantage_foot_down{
+	margin: 0 auto;
+	text-align: center;
+	width: 80%;
+	padding-bottom: 20%;
+}
+.advantage_foot_down p{
+	font-size: 0.7rem;
+	/* padding: 5px 20px; */
+}
+/* @media screen and (min-width:700px) and (max-width:1000px){
+.advantage_foot_middle p{font-size: 0.8rem; padding: 20px 2px;}
+	.advantage_foot_down p{font-size: 0.1rem; padding: 5px 2px;}
+	*{color: red;}
+} */
+/* 特色课程 */
+#characteristic_course{
+	/* margin: 50px auto; */
+	/* margin-bottom: 45px; */
+}
+.characteristic_course_top{
+	padding: 3% 0%;
+}
+/* 特色课程下面部分 */
+.characteristic_course_foot{
+	display: flex;
+	margin-top: 45px;
+}
+/* 特色课程下面部分【左边】选项栏 */
+.characteristic_course_foot_left{
+	margin-left: 11%;
+	width: 20%;
+	background-color: #333333;
+	color: white;
+	display: flex;
+	flex-direction: column;
+}
+/* 特色课程下面部分【左边】选项栏的4个div */
+.ccfleft{
+	font-size: 1.25rem;
+	text-align: center;
+	padding: 15% 15%;
+}
+/* 特色课程下面部分左边选项栏的4个div中的图片span */
+.ccfleft span{
+	position: relative;
+	top: 5px;
+}
+
+/* 特色课程下面部分【右边】图片栏 */
+.characteristic_course_foot_right{
+	margin-right: 11%;
+	width: 80%;
+}
+
+/* -----------[【通用样式】--------------- */
+/* 通用外层效果 */
+.ccfright_warp{
+	display: none;
+	justify-content: space-around;
+	
+}
+/* 通用选项的中【左中右】的3个div */
+.ccfright{
+	width: calc(85%/3);
+	background-color: white;
+	display: flex;
+	flex-flow: column;
+	justify-content: space-around;
+	box-shadow: #b2b2b2 0px 2px 15px;
+}
+.ccfright:hover{
+	box-shadow: #fd6c01 0px 2px 15px;
+	/* transition:  all 0.1s ease 0s; */
+}
+.ccfright:hover img{
+	transform: scale(1.1);
+	opacity: 0.6;
+	transition: all 0.1s;
+}
+/* 通用div上中下效果 */
+.ccfright_up{
+	width:100%;
+	height:auto;
+	cursor: pointer;
+	overflow: hidden;
+	text-align: center;
+}
+.ccfright_up img{
+	width:100%;
+	height: 90%;
+	height:auto;
+	margin: 0 auto;
+}
+/* .ccfright_up img:hover{
+	transform: scale(1.1);
+	opacity: 0.5;
+	transition: all 0.1s;
+} */
+.ccfright_center{
+	padding:7% 0% ;
+}
+.ccfright_center p{
+	text-align: center;
+	width: 100%;
+	color: #666666;
+}
+.ccfright_center a{
+	text-decoration: none;
+	font-size: 1.3rem;
+	font-weight: 500;
+	color: #333333;
+}
+.ccfright_center div{
+	padding: 2% 10% 0% 10%;
+}
+.ccfright_down{
+	padding:0px 20px 20px 20px;
+}
+.ccfright_down input{
+	width: 100%;
+	height: 35px;
+	background-color: #FD6C02;
+	color: white;
+	outline: none;
+	border: none;
+	cursor: pointer;
+}
+
+.characteristic_course_foot_left1 .characteristic_course_foot_right_one:hover{
+	/* display: flex; */
+}
+
+
+/* 内容一、【视觉设计系列】的内容部分 */
+.characteristic_course_foot_right_one{
+	
+}
+/* 第1个div */
+.characteristic_course_foot_right_one_1{
+	
+}
+/* 第2个div */
+.characteristic_course_foot_right_one_2{
+
+}
+/* 第3个div */
+.characteristic_course_foot_right_one_3{
+
+}
+/* 内容二、【语言教育培训】的内容部分 */
+.characteristic_course_foot_right_two{
+	
+}
+.characteristic_course_foot_right_two_1 .ccfright_up{
+
+}
+.characteristic_course_foot_right_two_2{
+	
+}
+.characteristic_course_foot_right_two_3{
+	
+}
+.characteristic_course_foot_right_two_4{
+	
+}
+.characteristic_course_down{
+	padding: 3% 0%;
+	text-align: center;
+}
+.button_default01{
+	font-family: Microsoft YaHei;
+	padding: 0px ;
+	height: 55px;
+	width: 218px;
+	border-radius: 2px;
+	border: 2px solid #fd6c01;
+}
+.button_default01:hover{
+	background-color: #FD6C02;
+	color: white;
+}
+
+/* 教育名师界面 */
+#famous_teacher{
+	background-color: #f6f6f6;
+	padding-bottom: 3%;
+}
+/* 教育名师界面上面部分 */
+.famous_teacher_top{
+	/* padding: 3% 0%; */
+	/* padding-top: 3%; */
+}
+.famous_teacher_foot{
+	display: flex;
+	justify-content: space-evenly;
+	margin: 0 auto;
+}
+
+/* 外层左中右2 */
+.ftfeacher{
+	display: flex;
+	flex-direction: column;
+	width: 20%;
+	box-shadow: #b2b2b2 0px 2px 15px;
+}
+.ftfeacher:hover{
+	box-shadow: #fd6c01 0px 2px 15px;
+}
+/* 内层上中下 */
+.ftfeacher_up{
+	padding: 50%;
+}
+.ftfeacher_middle{
+	padding:3% 0%;
+	width: 100%;
+	text-align: center;
+	font-size: 1.5rem;
+	color: #444444;
+}
+.ftfeacher_down{
+	padding:3% 0%;
+	text-align: center;
+	font-size: 1.125rem;
+	color: #333333;
+}
+.ftfeacher_down a{
+	
+}
+.famous_teacher_foot_left .ftfeacher_up{
+	background-image: url(../img/famous_teacher_img1.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.famous_teacher_foot_center .ftfeacher_up{
+	background-image: url(../img/famous_teacher_img2.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.famous_teacher_foot_right .ftfeacher_up{
+	background-image: url(../img/famous_teacher_img3.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.famous_teacher_foot_right2 .ftfeacher_up{
+	background-image: url(../img/famous_teacher_img3.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+/* 教育学院 */
+.school_education_top{
+	padding:3% 0%;
+}
+.school_education_foot{
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	padding: 0% 5%;
+	padding-bottom: 4%;
+	
+}
+.sef_education{
+	text-align: center;
+	width: 20%;
+	padding: 1% 2%;
+}
+.school_education_foots_centent{
+	font-size: 48px;
+	color: #8b0eea;
+	font-family: SimHei;
+	font-weight: bold;
+	padding: 3%;
+}
+.school_education_foots_down{
+	padding-top: 20px;
+	font-size: 18px;
+	height: 28px;
+	padding: 15%;
+	padding-top: 0;
+}
+/* 学员作品 */
+#college_work{
+	background-color: #f6f6f6;
+	padding-bottom: 3%;
+}
+.college_work_top{
+	padding: 3%;
+}
+/* 4个按钮的外层 */
+.college_work_cen{
+	display: flex;
+	justify-content: space-evenly;
+	padding: 0% 20%;
+	background: transparent;
+}
+/* 4个类型按钮样式的选项 */
+.cw_center{
+	padding: 2% 7%;
+	border: 1px solid #d2d2d2;
+}
+/* 4个选项对应4div的效果 */
+.cw_foot_wrap{
+	width: 100%;
+	/* padding: 0% 3%; */
+	padding-top: 1.3%;
+	display: none;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+.cw_foot_wrap{
+	
+}
+.cw_foot_wrap div{
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.cw_foot_wrap div:hover{
+  transform: scale(1.1);
+}
+
+/* 每个选项中6个div作品的效果 */
+.cw_foot{
+	padding: 9% 13%;
+}
+.cw_foot:nth-child(3) ~ div{
+	margin-top: 2%;
+}
+.college_work_foot1 .cw_foot:nth-child(1){
+	background: url(../img/ia_200000120.png);
+	background-size: cover;
+}
+.college_work_foot1 .cw_foot:nth-child(2){
+	background: url(../img/ia_200000105.png);
+	background-size: cover;
+}
+.college_work_foot1 .cw_foot:nth-child(3){
+	background: url(../img/ia_200000107.png);
+	background-size: cover;
+}
+.college_work_foot1 .cw_foot:nth-child(4){
+	background: url(../img/ia_200000111.png);
+	background-size: cover;
+}
+.college_work_foot1 .cw_foot:nth-child(5){
+	background: url(../img/ia_200000123.png);
+	background-size: cover;
+}
+.college_work_foot1 .cw_foot:nth-child(6){
+	background: url(../img/ia_200000127.png);
+	background-size: cover;
+}
+
+.college_work_foot2 .cw_foot:nth-child(1){
+	background: url(../img/ia_200000127.png);
+	background-size: cover;
+}
+.college_work_foot2 .cw_foot:nth-child(2){
+	background: url(../img/ia_200000107.png);
+	background-size: cover;
+}
+.college_work_foot2 .cw_foot:nth-child(3){
+	background: url(../img/ia_200000105.png);
+	background-size: cover;
+}
+.college_work_foot2 .cw_foot:nth-child(4){
+	background: url(../img/ia_200000126.png);
+	background-size: cover;
+}
+.college_work_foot2 .cw_foot:nth-child(5){
+	background: url(../img/ia_200000111.png);
+	background-size: cover;
+}
+.college_work_foot2 .cw_foot:nth-child(6){
+	background: url(../img/ia_200000120.png);
+	background-size: cover;
+}
+
+.college_work_foot3 .cw_foot:nth-child(1){
+	background: url(../img/ia_200000126.png);
+	background-size: cover;
+}
+.college_work_foot3 .cw_foot:nth-child(2){
+	background: url(../img/ia_200000111.png);
+	background-size: cover;
+}
+.college_work_foot3 .cw_foot:nth-child(3){
+	background: url(../img/ia_200000120.png);
+	background-size: cover;
+}
+.college_work_foot3 .cw_foot:nth-child(4){
+	background: url(../img/ia_200000123.png);
+	background-size: cover;
+}
+.college_work_foot3 .cw_foot:nth-child(5){
+	background: url(../img/ia_200000127.png);
+	background-size: cover;
+}
+.college_work_foot3 .cw_foot:nth-child(6){
+	background: url(../img/ia_200000114.png);
+	background-size: cover;
+}
+
+.college_work_foot4 .cw_foot:nth-child(1){
+	background: url(../img/ia_200000127.png);
+	background-size: cover;
+}
+.college_work_foot4 .cw_foot:nth-child(2){
+	background: url(../img/ia_200000107.png);
+	background-size: cover;
+}
+.college_work_foot4 .cw_foot:nth-child(3){
+	background: url(../img/ia_200000105.png);
+	background-size: cover;
+}
+.college_work_foot4 .cw_foot:nth-child(4){
+	background: url(../img/ia_200000126.png);
+	background-size: cover;
+}
+.college_work_foot4 .cw_foot:nth-child(5){
+	background: url(../img/ia_200000111.png);
+	background-size: cover;
+}
+.college_work_foot4 .cw_foot:nth-child(6){
+	background: url(../img/ia_200000120.png);
+	background-size: cover;
+}
+
+/* 线上教育价值 */
+#educational_value{
+	padding-bottom: 3%;
+}
+/* 线上教育价值[头部] */
+.educational_value_top{
+	padding: 3%;
+}
+/* 线上教育价值[尾部] */
+.educational_value_foot{
+	display: flex;
+	/* flex-direction: column; */
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	padding: 0% 1%;
+}
+.educational_value_foot div:nth-child(3)~div{
+	margin-top: 2%;
+}
+/* 线上教育价值[尾部]上 */
+.educational_value_foot_top{
+	display: flex;
+	justify-content: space-evenly;
+}
+/* 线上教育价值[尾部]下 */
+.educational_value_foot_foot{
+	display: flex;
+	justify-content: space-evenly;
+	padding-top: 2%;
+}	
+/* 上下两排6个div的效果 */
+.evf_foot{
+	width: calc(90%/3);
+	box-shadow: #cccccc 0px 0px 10px;
+	display: flex;
+}
+.evf_foot:hover{
+	box-shadow: #fd6c01 0px 2px 15px;
+}
+.evf_foot:hover{
+	background-color: #fd8a35;
+}
+/* 6个div中左边图片部分 */
+.evf_foot_left img{
+	width: 100%;
+	height: 100%;
+}
+/* 6个div中左边文字部分——上 */
+.evf_foot_right_up{
+	font-size: 1.125rem;
+	text-align: left;
+	/* height: 50%; */
+	padding:8% 12%;
+	padding-top: 15%;
+}
+/* 6个div中左边文字部分——下 */
+.evf_foot_right_down{
+	text-align: left;
+	font-size: 12px;
+	color: #666;
+	word-break: break-word;
+	padding:1% 12%;
+	padding-top: 2%;
+}
+
+
+/* 实时升学资讯 */
+#entrance_information{
+	padding-bottom: 3%;
+}
+/* 实时升学资讯[上] */
+.entrance_information_top{
+	padding: 3%
+}
+/* 实时升学资讯[下]外层 */
+.entrance_information_foot{
+	display: flex;
+	justify-content: space-evenly;
+	padding: 0% 8%
+}
+/* 内层的三个div */
+.eif_foot{
+	box-shadow: #b2b2b2 0px 1px 10px;
+	padding: 5px;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+.eif_foot:hover{
+	box-shadow: #fd6c01 0px 2px 15px;
+}
+.eif_foot_News_img{
+	/* padding: 25%; */
+	
+}
+.eif_foot_News_img img{
+	width: 100%;
+	height: 100%;
+}
+.eif_foot_newTitle{
+	font-size: 1.1rem;
+	padding:1% 0%;
+}
+.eif_foot_newDeta{
+	font-size: 0.9rem;
+	padding:2% 0%;
+}
+.eif_foot_newSort{
+	padding: 2% 0%;
+}
+.eif_foot_newSort span:first-child{
+	color: white;
+	background-color: #fd6c01;
+	padding: 1% 3%;
+}
+.eif_foot_newSort span:last-child{
+	padding: 1%;
+}
+/* .entrance_information_foot1 .eif_foot_News_img{
+	background-image: url(../img/entrance_information_img1.png);
+}
+.entrance_information_foot2 .eif_foot_News_img{
+	background-image: url(../img/entrance_information_img2.png);
+}
+.entrance_information_foot3 .eif_foot_News_img{
+	background-image: url(../img/entrance_information_img3.png);
+} */
+
+/* 免费试听，实现华丽转身 */
+#table_warp{
+	background-color: blue;
+	background: url(../img/table_backgound.png);
+	background-size: cover;
+	padding: 2%;
+	margin: 0% 10%;
+}
+.table_one{
+	font-size: 24px;
+	color: #ffffff;
+	text-align: center;
+	padding: 1%;
+}
+.table_two{
+	color: #ffffff;
+	font-size: 0.875rem;
+	text-align: center;
+	padding: 0% 20%;
+	padding-bottom: 2%;
+}
+.table_there{
+	padding:0% 1%;
+}
+.table_there input{
+	border-radius: 1%;
+	padding: 1.5% 1%;
+	margin: 0.5% 2%;
+	width: calc(87%/3);
+}
+.table_there textarea{
+	margin: 1% 2%;
+	padding: 1% 1%;
+	width: 96%;
+	height: 80%;
+}
+.table_there input:last-child{
+	padding: 1%;
+	width: 25%;
+	margin-top: 14px;
+	margin-bottom: 20px;
+	background: #fd6c01;
+	border-radius: 2px;
+	color: white;
+	font-weight: bold;
+}
+
+/* —————————————————————————————尾部划分线———————————————————————————————— */
+
+/* 页脚的最【上面】 */
+#foot{
+	color: white;
+	background-color: #2a2931;
+}
+/* 页脚上面标题部分 */
+.foot_up{
+	text-align: center;
+	padding: 3% 0%;
+}
+.foot_up_title_one{
+	color: #ffffff;
+	font-size: 1.8rem;
+}
+.foot_up_title_two{
+	font-size: 1.2rem;
+	color: #fd6c01;
+	background-color: transparent;
+	font-weight: bold;
+}
+/* 页脚下面内容部分 */
+.foot_up_contet{
+	display: flex;
+	justify-content: space-evenly;
+	padding: 5%;
+	padding-top: 0%;
+	padding-bottom: 3%;
+}
+.foot_up_contet>div{
+	width: 23%;
+}
+/* 三个标题部分 */
+.fucl_title{
+	color: white;
+	font-size: 1.25rem;
+	padding-bottom: 5%;
+}
+.foot_up_contet_left{
+	font-size: 0.9rem;
+}
+.foot_up_contet_left>div{
+	padding: 1% 0%;
+}
+.foot_up_contet_left div:nth-child(2){
+	padding-top: 5%;
+}
+
+/* 页脚最【下面】 */
+.foot_down{
+	color: #666666;
+	font-size: 0.875rem;
+	/* width: 100%; */
+	margin: 0 auto;
+	background-color: #282828;
+	padding: 2% 0;
+	text-align: center;
+}
+.foot_up_contet_middle li{
+	font-size: 0.9rem;
+	list-style: none;
+	padding: 1% 0;
+}
+.foot_up_contet_middle a{
+	color: white;
+	text-decoration: none;
+}
+.foot_up_contet_middle a:hover{
+	color: #fd6c01;
+}
+.foot_up_contet_right_middle{
+	font-size: 0.9rem;
+	padding: 2% 0%;
+	padding-bottom: 5%;
+}
+.foot_up_contet_right_down{
+	margin-top: 10%;
+}
+.foot_up_contet_right_down1{
+	float: left;
+}
+.foot_up_contet_right_down2{
+	float: right;
+	font-size: 0.9rem;
+	padding-top: 13%;
+	padding-bottom: 13%;
+	padding-right: 40%;
+}
