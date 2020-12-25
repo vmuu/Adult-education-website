@@ -51,7 +51,7 @@ body{
 	justify-content: space-around;
 }
 .nav_right li{
-	padding: 2% 3%;
+	/* padding: 2% 3%; */
 }
 .nav_right a{
 	font-size: 1.1rem;
@@ -65,6 +65,12 @@ body{
 #nav_mobile{
 	display: none;
 }
+
+
+
+
+
+
 
 /* 导航栏iPad端 */
 @media screen and (min-width:700px) and (max-width:1000px){
@@ -242,9 +248,9 @@ body{
 }
 /* 特色课程下面部分【左边】选项栏的4个div */
 .ccfleft{
-	font-size: 1.25rem;
+	font-size: 1rem;
 	text-align: center;
-	padding: 15% 15%;
+	padding: 15% 1%;
 }
 /* 特色课程下面部分左边选项栏的4个div中的图片span */
 .ccfleft span{
@@ -332,6 +338,9 @@ body{
 	cursor: pointer;
 }
 
+.characteristic_course_foot_left1 {
+	background-color: rgb(253, 108, 2);
+}
 .characteristic_course_foot_left1 .characteristic_course_foot_right_one:hover{
 	/* display: flex; */
 }
@@ -437,6 +446,13 @@ body{
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+.ftfeacher_up:hover{
+	transform: scale(1.3);
+	
+}
+.imgs1{
+	overflow: hidden;
+}
 .famous_teacher_foot_center .ftfeacher_up{
 	background-image: url(../img/famous_teacher_img2.png);
 	background-repeat: no-repeat;
@@ -502,6 +518,13 @@ body{
 .cw_center{
 	padding: 2% 7%;
 	border: 1px solid #d2d2d2;
+}
+.uicolor{
+	/*background-color: rgb(253, 108, 2);*/
+	
+}
+.uicolor:hover{
+	background-color: rgb(0, 108, 2);
 }
 /* 4个选项对应4div的效果 */
 .cw_foot_wrap{
@@ -717,6 +740,9 @@ body{
 	margin-left: 2%;
 	margin-right: 2%;
 }
+.eif_foot:nth-child(2)~div{
+	/* margin-top: 2%; */
+}
 .eif_foot:hover{
 	box-shadow: #fd6c01 0px 2px 15px;
 }
@@ -764,15 +790,16 @@ body{
 	background-size: cover;
 	padding: 2%;
 	margin: 0% 10%;
+	margin-bottom: 3%;
 }
 .table_one{
 	font-size: 24px;
-	color: #ffffff;
+	color:whitesmoke;
 	text-align: center;
 	padding: 1%;
 }
 .table_two{
-	color: #ffffff;
+	color: white;
 	font-size: 0.875rem;
 	text-align: center;
 	padding: 0% 20%;
@@ -894,3 +921,8 @@ body{
 	padding-right: 40%;
 }
 
+@media screen and (max-width:1360px){
+	.ccfleft {
+		font-size: 0.5rem;
+	}
+}

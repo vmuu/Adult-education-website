@@ -3,9 +3,23 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="css/about-usphone.css" />
 		<link rel="stylesheet" type="text/css" href="css/about_us.css"/>
 		<script src="js/jquery-3.3.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/web_animation.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/web_animation.css"/>
+		<script type="text/javascript" src="//api.map.baidu.com/api?v=2.0&ak=fmnniosXxifquMmoShpSNRa9vmb784Yk"></script>
 		<title>关于我们</title>
+		<style type="text/css">
+			
+	     #allmap {
+		width: 80vw;
+		height: 50vh;
+		overflow: hidden;
+		margin:0;
+		font-family:"微软雅黑";
+		}
+	</style>
 	</head>
 	<body>
 		<div id="wrap">
@@ -44,7 +58,7 @@
 			</div>
 			<!-- 滚动图部分 -->
 			<div id="column">
-				<div class="column_text_wrap">
+				<div id="column_move1" class="column_text_wrap">
 					<div class="column_text_t">关于我们</div>
 					<div class="column_text_f"></div>
 				</div>
@@ -52,59 +66,56 @@
 <!-- ————————————————————————【头部】划分线—————————————————————————————— -->
 			<div class="content">
 				<div class="centent_top">
-					教师团队
+					关于我们
 				</div>
 				
-				<div class="content-2">
+				<div id="boo" class="content-2">
 					<div class="left-con2">
-						<img id="phoneChang" src="./img/1584517505958f9f31ba74b585b92.jpg" width="600px" height="500px"/>
-						
+						<img id="phoneChang" src="./img/1584517505958f9f31ba74b585b92.jpg" width="100%" height="100%"/>
 					</div>
-					
 					<div class="right-con2" >
-					<div class="right_con2-1 bodercon2">
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;成人教育网拥有一支师德高尚、爱生乐教、业务精湛、勇于创新的高 <br />水平、高学历教师队伍。 
-					</div>
-					<div class="right_con2-2 bodercon2">
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;学校遵循“国际化、现代化、高品质”的办学定位，学校遵循“国际化、现 <br />代化、高品质”的办学定位，全面素质教育，铸就特色品牌。
-					</div>
-					<div class="right_con2-3 bodercon2">
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;学校以培训为核心，拥有基础英语培训、大学英语及考研培训、出国考试 <br />培训、多语种培训等多个培训体系，同时在基础教育、职业教育、教育研发、出国咨询、文化产业等方面取得了骄人的成绩。 
-					</div>
-			
+						<p class="right_con2-1 bodercon2">
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;成人教育网拥有一支师德高尚、爱生乐教、业务精湛、勇于创新的高 水平、高学历教师队伍。 
+						</p>
+						<p class="right_con2-2 bodercon2">
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;学校遵循“国际化、现代化、高品质”的办学定位，学校遵循“国际化、现 代化、高品质”的办学定位，全面素质教育，铸就特色品牌。
+						</p>
+						<p class="right_con2-3 bodercon2">
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;学校以培训为核心，拥有基础英语培训、大学英语及考研培训、出国考试 培训、多语种培训等多个培训体系，同时在基础教育、职业教育、教育研发、出国咨询、文化产业等方面取得了骄人的成绩。 
+						</p>
 					</div>
 				</div>	
-				
-				
 				<div class="content-3">
 					<ul>
 						<li>
-							<div class="boderimg">
-								<img  src="img/1584523786194b36d24334d4fa8d7.png" width="50px" height="50px"/><br />
+							<div class="boderimg boder-pad1">
+								<img  src="img/1584523786194b36d24334d4fa8d7.png" width="70px" height="70px"/><br />
 						        <p>联系电话：400-000-0000</p>
 							</div>
 							
 						</li>
 						<li>
-							<div class="boderimg">
-								<img src="img/1584523786197a43ed8485ce81b9d.png" width="50px" height="50px"/><br />
-						        <p>邮箱：admin@ourdomain.com</p>
+							<div class="boderimg boder-pad2">
+								<img src="img/1584523786197a43ed8485ce81b9d.png" width="70px" height="70px"/><br />
+						        <p>邮箱：-351-699-2087</p>
 						        
 							</div>
 						</li>
 						<li>
 							<div class="boderimg">
-								<img src="img/158452378619827ede68e974f0343.png" width="50px" height="50px"/><br />
-						        <p>地址：珠海市XXX区域XXX街道XXX号</p>
+								<img src="img/158452378619827ede68e974f0343.png"   width="70px" height="70px"/><br />
+								
+						       <div id="center1">
+						       	<p>地址：昆明市XX区域XX街道XX号</p>
+						       </div> 
 							</div>
 						</li>
 					</ul>
-					
-					-->
 				</div>
-				<div class="content-4">
-						<img src="img/屏幕截图 2020-12-09 143841.png"  width="100%" height="100%"/>
-				</div> 
+				<div class="content-4" width="100%" >
+					<div id="allmap"></div> 
+				</div>
+				
 			</div>
 <!-- ————————————————————————【尾部】划分线—————————————————————————————— -->
 			<!-- 页脚 -->
@@ -210,63 +221,27 @@
 				function navModiles(){
 					$("#nav_mobile_w").slideUp(500);
 				}
-				// 特色课程页面切换效果
-				var show = document.getElementsByClassName("button_i");
-				var hide = document.getElementsByClassName("centent_middle");
-				// 鼠标移入事件
-				var index = 0;
-				show[0].onclick = function(){
-					index--;
-					console.log(index);
-					if (index<=1) {
-						index = 4;
-					};
-					$(".button_i").siblings("input").css("background-color","white").css("color","black");
-					show[index-1].style.backgroundColor="#FD6C02";
-					show[index-1].style.color="white";
-					$(".centent_middle").siblings("div").css("display","none");
-					hide[index-2].style.display=("flex");
-				};
-				show[1].onclick = function(){
-					index = 0;
-					console.log(index);
-					$(".button_i").siblings("input").css("background-color","white").css("color","black");
-					show[1].style.backgroundColor="#FD6C02";
-					show[1].style.color="white";
-					$(".centent_middle").siblings("div").css("display","none");
-					hide[1-1].style.display=("flex");
-				};
-				show[2].onclick = function(){
-					index = 1;
-					console.log(index);
-					$(".button_i").siblings("input").css("background-color","white").css("color","black");
-					show[2].style.backgroundColor="#FD6C02";
-					show[2].style.color="white";
-					$(".centent_middle").siblings("div").css("display","none");
-					hide[2-1].style.display=("flex");
-				};
-				show[3].onclick = function(){
-					index = 2;
-					console.log(index);
-					$(".button_i").siblings("input").css("background-color","white").css("color","black");
-					show[3].style.backgroundColor="#FD6C02";
-					show[3].style.color="white";
-					$(".centent_middle").siblings("div").css("display","none");
-					hide[3-1].style.display=("flex");
-				};
-				show[4].onclick = function(){
-					index++;
-					console.log(index);
-					if (index >= 3) {
-						index = 0;
-					};
-					$(".button_i").siblings("input").css("background-color","white").css("color","black");
-					show[index+1].style.backgroundColor="#FD6C02";
-					show[index+1].style.color="white";
-					$(".centent_middle").siblings("div").css("display","none");
-					hide[index].style.display=("flex");
-				};
+				
+				
+				
+				// 百度地图API功能
+				var map = new BMap.Map("allmap");    // 创建Map实例
+	            map.centerAndZoom(new BMap.Point(102.72,25.05), 10);  // 初始化地图,设置中心点坐标和地图级别
+	            //添加地图类型控件
+	            map.addControl(new BMap.MapTypeControl({
+		        mapTypes:[
+                 BMAP_NORMAL_MAP,
+               BMAP_HYBRID_MAP
+              ]}));	  
+	            map.setCurrentCity("昆明");          // 设置地图显示的城市 此项是必须设置的
+	            map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+	            var scaleCtrl = new BMapGL.ScaleControl();  // 添加比例尺控件
+                map.addControl(scaleCtrl);
+                var zoomCtrl = new BMapGL.ZoomControl();  // 添加比例尺控件
+                map.addControl(zoomCtrl);
+	
 			</script>
 		</div>
 	</body>
 </html>
+

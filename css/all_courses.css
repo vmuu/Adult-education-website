@@ -51,7 +51,7 @@ body{
 	justify-content: space-around;
 }
 .nav_right li{
-	padding: 2% 3%;
+	/* padding: 2% 3%; */
 }
 .nav_right a{
 	font-size: 1.1rem;

@@ -4,9 +4,11 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<link rel="stylesheet" type="text/css" href="css/index.css"/>
-		<link rel="stylesheet" type="text/css" href="./css/index_mobie.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index_mobie.css"/>
+		<link rel="stylesheet" type="text/css" href="css/web_animation.css"/>
 		<script src="js/jquery-3.3.1.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/index.js"></script>
+		<script src="js/web_animation.js"></script>
 		<title>成人教育网</title>
 	</head>
 	<body>
@@ -47,8 +49,8 @@
 			<!-- 滚动图部分 -->
 			<div id="column">
 				<div class="column_text_wrap">
-					<div class="column_text_t">UI全链路设计</div>
-					<div class="column_text_f">颠覆传统设计技能，开启职场薪高度</div>
+					<div id="column_move1" class="column_text_t">UI全链路设计</div>
+					<div id="column_move2" class="column_text_f">颠覆传统设计技能，开启职场薪高度</div>
 				</div>
 				<ul>
 					<li></li>
@@ -60,14 +62,14 @@
 				<!-- 顶尖级教育优势 -->
 				<div id="advantage">
 					<div class="advantage_top">
-						<div class="text_title_top">
+						<div id="move2" class="text_title_top">
 							顶尖级教育优势
 						</div>
 						<div class="text_title_foot">
 							OUR ADVANTAGE
 						</div>
 					</div>
-					<div class="advantage_foot">
+					<div id="advantage_move" class="advantage_foot">
 						<div class="adv_f advantage_foot1">
 							<div class="advantage_foot_up">
 								
@@ -127,7 +129,7 @@
 						</div>
 					</div>
 					<!-- 特色课程【尾部】 -->
-					<div class="characteristic_course_foot">
+					<div id="course" class="characteristic_course_foot">
 						<div class="characteristic_course_foot_left">
 							<!-- 1、视觉设计系列 -->
 							<div class="ccfleft characteristic_course_foot_left1">
@@ -340,11 +342,14 @@
 							</div>
 						</div>
 					</div>
-					<div class="famous_teacher_foot">
+					<div id="teacher_move" class="famous_teacher_foot">
 						<div class="ftfeacher famous_teacher_foot_left">
-							<div class="ftfeacher_up">
+							<div class="imgs1">
+								<div class="ftfeacher_up">
 								
 							</div>
+							</div>
+							
 							<div class="ftfeacher_middle">
 								MingJin Yang
 							</div>
@@ -353,9 +358,11 @@
 							</div>
 						</div>
 						<div class="ftfeacher famous_teacher_foot_center">
+						 <div class="imgs1">
 							<div class="ftfeacher_up">
 								
 							</div>
+						 </div>
 							<div class="ftfeacher_middle">
 								MingJin Yang
 							</div>
@@ -364,9 +371,11 @@
 							</div>
 						</div>
 						<div class="ftfeacher famous_teacher_foot_right">
+						  <div class="imgs1">
 							<div class="ftfeacher_up">
 								
 							</div>
+						  </div> 
 							<div class="ftfeacher_middle">
 								MingJin Yang
 							</div>
@@ -375,9 +384,11 @@
 							</div>
 						</div>
 						<div class="ftfeacher famous_teacher_foot_right2">
+						  <div class="imgs1">
 							<div class="ftfeacher_up">
 								
 							</div>
+						  </div>
 							<div class="ftfeacher_middle">
 								MingJin Yang
 							</div>
@@ -398,7 +409,7 @@
 							我们使世界变得更美好。13年多来，我们没有偏离这一愿景
 						</div>
 					</div>
-					<div class="school_education_foot">
+					<div id="education_move" class="school_education_foot">
 						<div class="sef_education school_education_foot1">
 							<img src="img/school_education_img1.png" >
 							<div class="school_education_foots_centent">
@@ -448,7 +459,7 @@
 						</div>
 					</div>
 					<div class="college_work_cen">
-						<div class="cw_center">
+						<div class="cw_center uicolor" >
 							UI设计
 						</div>
 						<div class="cw_center">
@@ -504,7 +515,7 @@
 							Online education value
 						</div>
 					</div>
-					<div class="educational_value_foot">
+					<div id="college_move" class="educational_value_foot">
 						<!-- <div class="educational_value_foot_top"> -->
 							<div class="evf_foot educational_value_foot1">
 								<div class="evf_foot_left">
@@ -600,7 +611,7 @@
 							SCHOOL INFORMATION
 						</div>
 					</div>
-					<div class="entrance_information_foot">
+					<div id="entrance_move" class="entrance_information_foot">
 						<div class="eif_foot entrance_information_foot1">
 							<div class="eif_foot_News_img">
 								<a href="#"><img src="img/entrance_information_img1.png" ></a>
@@ -660,7 +671,7 @@
 						目前在全国各地拥有十三所分部，已经开设20多种门门类的UI设计、游戏设计、影视特效、室内设计、程序开发
 						课程，配置了400多间多媒体课室，拥有2000多台IMAC苹果一体机，7000多台高配置PC电脑
 					</div>
-					<div class="table_there">
+					<div id="boo" class="table_there">
 						<input type="text" id="" value="" placeholder="姓名" />
 						<input type="text" id="" value="" placeholder="电话" />
 						<input type="text" id="" value="" placeholder="手机号" />
@@ -729,26 +740,26 @@
 				</div>
 			</div>
 			<!-- 手机端导航栏 -->
-			<div id="nav_mobile" >
+			<div id="nav_mobile">
 				<div class="nav_mobile_all nav_mobile1">
-					<a href="#"><img src="img/nav_mobile_img1.png" ></a>
-					<a href="#">首页</a>
+					<a href="index.html"><img src="img/nav_mobile_img1.png" ></a>
+					<a href="index.html">首页</a>
 				</div>
 				<div class="nav_mobile_all nav_mobile2">
 					<a href="all_courses.html"><img src="img/nav_mobile_img2.png" ></a>
 					<a href="all_courses.html">所有课程</a>
 				</div>
 				<div class="nav_mobile_all nav_mobile3">
-					<a href="#"><img src="img/nav_mobile_img3.png" ></a>
-					<a href="#">新闻资讯</a>
+					<a href="news_information.html"><img src="img/nav_mobile_img3.png" ></a>
+					<a href="news_information.html">新闻资讯</a>
 				</div>
 				<div class="nav_mobile_all nav_mobile4">
-					<a href="#"><img src="img/nav_mobile_img4.png" ></a>
-					<a href="#">教师团队</a>
+					<a href="teacher_team.html"><img src="img/nav_mobile_img4.png" ></a>
+					<a href="teacher_team.html">教师团队</a>
 				</div>
 				<div class="nav_mobile_all nav_mobile5">
-					<a href="#"><img src="img/nav_mobile_img5.png" ></a>
-					<a href="#">关于我们</a>
+					<a href="about_us.html"><img src="img/nav_mobile_img5.png" ></a>
+					<a href="about_us.html">关于我们</a>
 				</div>
 			</div>
 			<!-- 最右边边按钮点击后的结构 -->

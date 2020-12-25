@@ -61,7 +61,9 @@ $(function(){
 	
 	// 教育名师按钮切换效果
 	var cw_center = document.getElementsByClassName("cw_center");
+	var uicolor=document.getElementsByClassName("uicolor");
 	var cw_foot_wrap =document.getElementsByClassName("cw_foot_wrap");
+		cw_center[0].style.backgroundColor="#FD6C02";
 	cw_center[0].onmouseover = function(){
 		$(".cw_center").siblings("div").css("background-color","")
 		cw_center[0].style.backgroundColor="#FD6C02";
@@ -72,6 +74,7 @@ $(function(){
 	cw_center[1].onmouseover = function(){
 		$(".cw_center").siblings("div").css("background-color","")
 		cw_center[1].style.backgroundColor="#FD6C02";
+	
 		// $(".cw_foot_wrap").eq(1).css("display","none")
 		$(".cw_foot_wrap:not(1)").css("display","none");
 		cw_foot_wrap[1].style.display=("flex");

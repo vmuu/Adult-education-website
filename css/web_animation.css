@@ -1,0 +1,76 @@
+
+/* 从左到右的 */
+#column_move1.move,
+#column_move2.move,
+#course.move,
+#college_move.move{
+	animation: form-left-to-right 0.8s
+}
+/* 从右到左的 */
+#advantage_move.move,
+#teacher_move.move,
+#entrance_move.move{
+	animation: form-right-to-left 0.8s
+}
+/* 从上到下的 */
+#education_move.move{
+	animation: form-up-to-down 1s
+}
+/* 从无到有 */
+#boo.move{
+	animation: ssws 2s
+}
+
+/* 从左到右 */
+@keyframes form-left-to-right{
+	from{
+		opacity: 0;
+		transform: translateX(-50%);
+	}
+	to{
+		opacity: 1;
+		transform: translate(0px);
+	}
+}
+/* 从右到左 */
+@keyframes form-right-to-left{
+	from{
+		opacity: 0;
+		transform: translateX(50%);
+	}
+	to{
+		opacity: 1;
+		transform: translate(0px);
+	}
+}
+/* 从上到下 */
+@keyframes form-up-to-down{
+	from{
+		opacity: 0;
+		transform: translateY(50%);
+	}
+	to{
+		opacity: 1;
+		transform: translate(0px);
+	}
+}
+/* 从下到上 */
+@keyframes form-down-to-up{
+	from{
+		opacity: 0;
+		transform: translateY(-50%);
+	}
+	to{
+		opacity: 1;
+		transform: translate(0px);
+	}
+}
+/* 从无到有 */
+@keyframes ssws{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}

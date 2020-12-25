@@ -55,7 +55,7 @@ body{
 	justify-content: space-around;
 }
 .nav_right li{
-	padding: 2% 3%;
+	/* padding: 2% 3%; */
 }
 .nav_right a{
 	font-size: 1.1rem;
@@ -339,15 +339,6 @@ body{
 		text-align: right;
 	}
 	/* —————————————————————————————手机端头部划分线———————————————————————————————— */
-	#centent {
-	    padding: 0%;
-	}
-	.centent_middle_div3{
-		margin-top: 3%;
-	}
-	.center_div{
-		width: calc(90%/2);
-	}
 
 	/* —————————————————————————————手机端尾部划分线———————————————————————————————— */
 	/* 隐藏尾部留版权 */
@@ -393,9 +384,15 @@ body{
 	.nav_mobile2 a:nth-child(2){
 		color: #fd6c01;
 	}
+	/* —————————————————————————————— */
+	
+	
+	
 };
 
-
+h4{
+	
+}
 
 .border{
 	margin: 0 auto;
@@ -663,3 +660,4 @@ a{
     filter: alpha(opacity=88);  
 	/* 所有浏览器都支持 opacity 属性。   注释：IE8 以及更早的版本支持替代的 filter 属性。例如：filter:Alpha(opacity=50)。*/
 }
+
